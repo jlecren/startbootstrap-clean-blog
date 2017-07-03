@@ -9,6 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/google_news.html" . }}
+{{ template "_internal/schema.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+
     <title>{{ .Title }} -- {{ .Site.Title }}</title>
 
     {{ if .RSSLink }}
